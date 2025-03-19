@@ -1,16 +1,16 @@
-/**
- * @author Marcel Turcotte, Guy-Vincent Jourdan and Mehrdad Sabetzadeh
- *         (University of Ottawa)
- * 
- *         The declaration of this interface is complete. You do *not* need to
- *         change this interface in this assignment.
- * 
- */
+// -*- Mode: Java -*- 
+// Queue.java --- Queue interface
+// Author          : Marcel Turcotte
+// Created On      : Sat Mar  3 07:59:16 2007
+// Last Modified By: Marcel Turcotte
+// Last Modified On: Sat Mar  3 07:59:28 2007
+// ITI 1121/1521. Introduction to Computer Science II
 
 public interface Queue<E> {
-	boolean isEmpty();
 
-	void enqueue(E newElement);
+    public abstract void enqueue( E obj );
+    public abstract E dequeue();
+    public abstract boolean isEmpty();
+    public abstract int size();
 
-	E dequeue();
 }
